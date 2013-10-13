@@ -1,5 +1,5 @@
-if defined?(::Refinery::User)
-  ::Refinery::User.all.each do |user|
+if defined?(::Spree::User)
+  ::Spree::User.all.each do |user|
     if user.plugins.where(:name => 'refinerycms_news').blank?
       user.plugins.create(:name => 'refinerycms_news')
     end
