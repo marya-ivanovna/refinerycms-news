@@ -13,7 +13,7 @@ class CreateNewsItems < ActiveRecord::Migration
   end
 
   def down
-    ::Refinery::UserPlugin.destroy_all :name => "refinerycms_news"
+    ::Spree::UserPlugin.destroy_all :name => "refinerycms_news"
 
     ::Refinery::Page.delete_all :link_url => "/news"
 
