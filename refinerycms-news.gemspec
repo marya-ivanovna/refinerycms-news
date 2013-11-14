@@ -16,5 +16,4 @@ Gem::Specification.new do |s|
   s.add_dependency    'refinerycms-core',     '~> 2.1.0'
   s.add_dependency    'refinerycms-settings', '~> 2.1.0'
   s.add_dependency    'friendly_id',          '~> 4.0.9'
-  s.add_dependency 'jquery-rails',                ['>= 2.3.0', '< 3.0.0']
 end
